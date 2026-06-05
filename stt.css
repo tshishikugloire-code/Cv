@@ -1,0 +1,38 @@
+.cv-container {
+    background-color: #2c3e50;
+    width:70%;
+    margin:auto;
+    padding: 20px;
+    border-radius: 100px;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align:justify;
+    background: linear-gradient(to bottom, #1e05dfb3, #983ac0f8);
+}
+h1 {
+    color: darkgray;
+    text-align: center;
+}
+p {
+    color: darkgray;
+}
+h2,h3 {
+    color: darkgray;
+}
+li {
+    color: darkgray;
+}
+.photo img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: auto;
+    border-radius: 0%;
+    
+    
+}
+
