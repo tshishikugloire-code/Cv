@@ -1,0 +1,245 @@
+/* ---------- BODY ---------- */
+
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+
+    min-height:100vh;
+
+    background-image:url("");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-color:#1f2937;
+    
+
+    color:white;
+}
+
+/* Overlay sombre */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,0.55);
+
+    z-index:-1;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 40px;
+
+    background:rgba(0,0,0,0.25);
+    backdrop-filter:blur(8px);
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#38bdf8;
+    font-size:18px;
+}
+
+.logo{
+    color:white !important;
+    font-size:2em;
+    font-weight:bold;
+}
+
+.nav-link ul{
+    list-style:none;
+
+    display:flex;
+    gap:25px;
+
+    margin:0;
+    padding:0;
+}
+
+/* ---------- hero ---------- */
+
+.hero{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#e5e7eb;
+    font-size:18px;
+}
+
+/* ---------- BOX ---------- */
+
+.box{
+    width:80%;
+    max-width:800px;
+
+    margin:25px auto;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 4px 20px rgba(0,0,0,0.2);
+}
+
+.box h2{
+    color:#38bdf8;
+    margin-top:0;
+}
+
+.box p{
+    line-height:1.6;
+}
+
+.box ul{
+    padding-left:20px;
+}
+
+.box li{
+    margin-bottom:10px;
+}
+
+/* ---------- PROGRESSION ---------- */
+
+.progress-bar{
+    width:100%;
+    height:22px;
+
+    background:#d1d5db;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin:15px 0;
+}
+
+.progress{
+    width:0%;
+    height:100%;
+
+    background:#22c55e;
+
+    border-radius:20px;
+}
+
+/* ---------- BOUTON ---------- */
+
+.button-container{
+    text-align:center;
+    margin:40px 0 60px;
+}
+
+.btn{
+    padding:14px 30px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#38bdf8;
+
+    color:white;
+
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#0ea5e9;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-link ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .box{
+        width:90%;
+    }
+}
+.login-notice{
+    width:80%;
+    max-width:800px;
+
+    margin:20px auto;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:rgba(56, 189, 248, 0.15);
+
+    border:1px solid rgba(56, 189, 248, 0.4);
+
+    text-align:center;
+}
+
+.login-notice h3{
+    margin-top:0;
+    color:#38bdf8;
+}
+
+.login-notice p{
+    color:#e5e7eb;
+    line-height:1.6;
+}
+
+.login-btn{
+    display:inline-block;
+
+    margin-top:10px;
+
+    padding:12px 25px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    background:#38bdf8;
+    color:white;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    background:#0ea5e9;
+    transform:translateY(-2px);
+}
